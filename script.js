@@ -7,7 +7,7 @@ let galleryImages = [];
 let currentImgIndex = 0;
 
 let xhr = new XMLHttpRequest();
-xhr.open("GET", "images/", true); // Initialize new request for folder we want to access
+xhr.open("GET", "./images/", true); // Initialize new request for folder we want to access
 xhr.responseType = 'document';
 xhr.onload = () => {
 	if (xhr.status === 200) {
